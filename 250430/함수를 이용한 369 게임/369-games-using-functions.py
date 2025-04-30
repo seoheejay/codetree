@@ -12,9 +12,9 @@ def fun(a,b):
             for x in i: #2랑9
                 if x=="3" or x=="6" or x=="9":
                     cnt+=1
-    print(cnt)
+    return cnt
 
-fun(a,b)
+print(fun(a,b))
 
 
 
