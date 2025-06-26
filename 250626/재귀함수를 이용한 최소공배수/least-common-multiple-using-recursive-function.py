@@ -10,6 +10,6 @@ def lcm(a, b):
 def f(arr, n):
     if n == 1:
         return arr[0]
-    return lcm(arr[n-1], find_lcm(arr, n-1))
+    return lcm(arr[n-1], f(arr, n-1))
 
 print(f(arr, n))
