@@ -7,8 +7,8 @@ lcm = arr[n-1] #이게 가장 큰 수
 def f(arr,n,lcm):
     if n==0:
         return lcm
-    elif arr[n-1]%arr[n-2] == 0:
-        return f(arr,n-1,lcm)
+    #elif arr[n-1]%arr[n-2] == 0:
+    #    return f(arr,n-1,lcm)
     else:
         for i in range(1,arr[n-2]+1): #작은 수
             if arr[n-2]%i==0:
