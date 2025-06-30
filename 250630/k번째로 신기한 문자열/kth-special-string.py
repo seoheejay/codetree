@@ -3,10 +3,17 @@ n, k = int(n), int(k)
 str = [input() for _ in range(n)]
 
 # Please write your code here.
-
+reslist=[]
 for x in str: #apple, appreciate...
-    if (x[0]!=t[0])or(x[1]!=t[1]):
-        str.remove(x)
+    res = True
+    for i in range(len(t)):
+        if (x[i]!=t[i]):
+            res = False
+            break
+    if res==True:
+        reslist.append(x)
 
-str.sort()
-print(str[k])
+reslist.sort()
+#reslist=sorted(reslist)
+#print(reslist)
+print(reslist[k-1])
