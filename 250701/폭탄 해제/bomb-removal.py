@@ -10,5 +10,6 @@ class Struc:
 
 struc = Struc(unlock_code, wire_color, seconds)
 
-print("")
-print("")
+print(f"code : {unlock_code}")
+print(f"color : {wire_color}")
+print(f"second : {seconds}")
