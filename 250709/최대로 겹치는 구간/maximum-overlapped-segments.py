@@ -10,7 +10,7 @@ shift = 100
 lst = []
 for _ in range(n):
     a,b = map(int, input().split()) # (1,5)
-    for i in range(a, b+1):
+    for i in range(a, b): #끝점 포함X 추가
         cnt[i+shift]+=1
 """
 인덱스 구하는 줄 알았음
