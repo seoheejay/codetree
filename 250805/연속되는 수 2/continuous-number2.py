@@ -1,11 +1,14 @@
 n = int(input())
-cnt=0
-num=0
-lst = []
-for i in range(n):
-    num = int(input())
-    lst.append(num)
-for i in range(n):
-    if i==0 or lst[i-1]!=lst[i]:
-        cnt+=1
-print(cnt)
+lst = [int(input()) for _ in range(n)]
+
+cnt = 1
+max_cnt = 1
+
+for i in range(1, n):
+    if lst[i] == lst[i-1]:  
+        cnt += 1
+        max_cnt = max(max_cnt, cnt)  
+    else:
+        cnt = 1              
+
+print(max_cnt)
