@@ -2,7 +2,7 @@ n, m = map(int, input().split())
 #n이 행 #m이 열
 arr = [[0]*m for _ in range(n)]
 x,y = 0,0 #현재위치
-#오 y증가, 아 x감소 , 왼 y감소, 위 x증가
+#오 y증가, 아 x증가 , 왼 y감소, 위 x감소
 dxs, dys = [0,1,0,-1],[1,0,-1,0]
 dir_num = 0 
 
