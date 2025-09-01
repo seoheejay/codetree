@@ -2,7 +2,7 @@ import sys
 INT_MAX = sys.maxsize
 
 n = int(input())
-points  [tuple(map(int, input().split())) for _ in range(n)]
+points =  [tuple(map(int, input().split())) for _ in range(n)]
 
 # 두 점 사이의 거리의 제곱 값 반환
 def dist(i,j):
