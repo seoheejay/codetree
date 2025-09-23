@@ -10,7 +10,7 @@ cnt, max_cnt= 0,0
 for K in range(1,max(lst)+1):
     cnt = 0
     for i in range(len(lst)):
-        for j in range(i,len(lst)):
+        for j in range(i+1,len(lst)):
             # abs 쓰면 안됨 if abs(lst[i]-K) == abs(lst[j]-K):
             if (lst[j]-K) == (K-lst[i]):
                 cnt+=1
