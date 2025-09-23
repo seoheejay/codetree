@@ -12,7 +12,7 @@ for K in range(1,max(lst)+1):
     for i in range(len(lst)):
         for j in range(i,len(lst)):
             # abs 쓰면 안됨 if abs(lst[i]-K) == abs(lst[j]-K):
-            if (lst[i]-K) == (K-lst[j]):
+            if (lst[j]-K) == (K-lst[i]):
                 cnt+=1
     max_cnt = max(max_cnt,cnt)
 
